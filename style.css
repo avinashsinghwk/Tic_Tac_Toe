@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    background-color: #64783c;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    display: flex;
+}
+.home_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 2rem 0;
+    width: 16rem;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+.home_btn img{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.home_btn1{
+    background-color: yellow;
+    box-shadow: 0 0 20px #ff00c1;
+}
+.home_btn2{
+    margin-left: 3rem;
+    background-color: #ff00c1;
+    box-shadow: 0 0 20px yellow;
+}
+
+
+/* ----------------------------------- */
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.wrapper_heading{
+    font-size: 2.3rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to right,#e80844, rgb(63, 5, 220));
+    color: transparent;
+    text-decoration: underline;
+    -webkit-background-clip: text;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+}
+
+.box{
+    background-color: white;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: 1px 1px 8px black;
+    border-radius: 5px;
+}
+.btns{
+    display: flex;
+    column-gap: 0.8rem;
+}
+.btn{
+    padding: 1rem 0.5rem;
+    width: 7rem;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+#quit{
+    background-color: #ff00c1;
+    box-shadow: 0 0 10px yellow;
+}
+
+#restart{
+    background-color: yellow;
+    box-shadow: 0 0 10px #ff00c1;
+}
+
+.colorRed{
+    color: red;
+}
+.colorBlue{
+    color: blue;
+}
+
+.box_filled{
+    cursor:not-allowed;
+    background-color: rgb(148 143 143);
+}
+
+/* ------------------------------------------ */
+
+@media (max-width:600px) {
+    .home{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .home_btn2{
+        margin-left: 0;
+    }
+    .wrapper_heading{
+        font-size: 1.7rem;
+    }
+}
